@@ -1,0 +1,486 @@
+{
+  "info": {
+    "_postman_id": "49d76046-f816-46c0-bdae-c4e9947f9d46",
+    "name": "module27",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "24084302",
+    "_collection_link": "https://go.postman.co/collection/24084302-49d76046-f816-46c0-bdae-c4e9947f9d46?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Registration",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"name\":\"Test User\",\r\n \"email\":\"test@gmail.com\",\r\n \"password\":\"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"name\":\"Test User\",\r\n \"email\":\"test@gmail.com\",\r\n \"password\":\"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create_news",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWFhNTk1ZjQzZTcyYzRlMzY5NWZhMiIsImlhdCI6MTc3MTc0NDM4MCwiZXhwIjoxNzcyMzQ5MTgwfQ.qQWa4Mbxg7txKXmPV2U7yOUC4ld3wGcUwB-YahDlYdk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"title\":\"Test News\",\r\n \"description\":\"This is news description\",\r\n \"image\":\"image_url\",\r\n \"category\":\"tech\",\r\n \"author\":\"userId\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/news",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "news"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get_all_news",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWFhNTk1ZjQzZTcyYzRlMzY5NWZhMiIsImlhdCI6MTc3MTc0Mjc2NSwiZXhwIjoxNzcyMzQ3NTY1fQ.GeaVV7tyAFyh9_7l4Ifn_5QFWiyLG4iQCYjxYL9KtpA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"title\":\"Test News\",\r\n \"description\":\"This is news description\",\r\n \"image\":\"image_url\",\r\n \"category\":\"tech\",\r\n \"author\":\"userId\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/news",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "news"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get_single_news",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWFhNTk1ZjQzZTcyYzRlMzY5NWZhMiIsImlhdCI6MTc3MTc0Mjc2NSwiZXhwIjoxNzcyMzQ3NTY1fQ.GeaVV7tyAFyh9_7l4Ifn_5QFWiyLG4iQCYjxYL9KtpA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"title\":\"Test News\",\r\n \"description\":\"This is news description\",\r\n \"image\":\"image_url\",\r\n \"category\":\"tech\",\r\n \"author\":\"userId\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/news/699aa6d8f43e72c4e3695fa5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "news",
+            "699aa6d8f43e72c4e3695fa5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "my_news",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWFhNTk1ZjQzZTcyYzRlMzY5NWZhMiIsImlhdCI6MTc3MTc0Mjc2NSwiZXhwIjoxNzcyMzQ3NTY1fQ.GeaVV7tyAFyh9_7l4Ifn_5QFWiyLG4iQCYjxYL9KtpA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"title\":\"Test News\",\r\n \"description\":\"This is news description\",\r\n \"image\":\"image_url\",\r\n \"category\":\"tech\",\r\n \"author\":\"userId\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/news/699aa6d8f43e72c4e3695fa5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "news",
+            "699aa6d8f43e72c4e3695fa5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "news_update",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWFhNTk1ZjQzZTcyYzRlMzY5NWZhMiIsImlhdCI6MTc3MTk1NzU0MCwiZXhwIjoxNzcyNTYyMzQwfQ.J_2GTc7fkSk9y6aE6fRb6w2nCkTxkY9FHP6o0jJ94L4",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"title\":\"Updated News Title hbedeudh dn\",\r\n \"description\":\"This is news description hukfuye\",\r\n \"image\":\"image_url\",\r\n \"category\":\"tech\",\r\n \"author\":\"699aa595f43e72c4e3695fa2\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/news/699aa595f43e72c4e3695fa2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "news",
+            "699aa595f43e72c4e3695fa2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update_profile",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWFhNTk1ZjQzZTcyYzRlMzY5NWZhMiIsImlhdCI6MTc3MTk1NzU0MCwiZXhwIjoxNzcyNTYyMzQwfQ.J_2GTc7fkSk9y6aE6fRb6w2nCkTxkY9FHP6o0jJ94L4",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"title\":\"Updated News Title hbedeudh dn\",\r\n \"description\":\"This is news description hukfuye\",\r\n \"image\":\"image_url\",\r\n \"category\":\"tech\",\r\n \"author\":\"699aa595f43e72c4e3695fa2\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/news/699aa595f43e72c4e3695fa2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "news",
+            "699aa595f43e72c4e3695fa2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "news_delete",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWUwZTg3MTFkYWRjMzBkMDIzYzU3ZSIsImlhdCI6MTc3MjAwMTA3NywiZXhwIjoxNzcyNjA1ODc3fQ.4zi6pWxbGqY5PVMohu7iqV1r17Vs9zL_Mv0iKQt94YQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"title\":\"Updated News Title hbedeudh dn\",\r\n \"description\":\"This is news description hukfuye\",\r\n \"image\":\"image_url\",\r\n \"category\":\"tech\",\r\n \"author\":\"699aa6d8f43e72c4e3695fa5\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/news/699aa6d8f43e72c4e3695fa5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "news",
+            "699aa6d8f43e72c4e3695fa5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get_profile",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWFhNTk1ZjQzZTcyYzRlMzY5NWZhMiIsImlhdCI6MTc3MTc0NDM4MCwiZXhwIjoxNzcyMzQ5MTgwfQ.qQWa4Mbxg7txKXmPV2U7yOUC4ld3wGcUwB-YahDlYdk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"title\":\"Updated News Title hbedeudh dn\",\r\n \"description\":\"This is news description hukfuye\",\r\n \"image\":\"image_url\",\r\n \"category\":\"tech\",\r\n \"author\":\"699aac8b630e2340bf6deb0c\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/profile",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "profile"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update_profile",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWFhNTk1ZjQzZTcyYzRlMzY5NWZhMiIsImlhdCI6MTc3MTc0NDM4MCwiZXhwIjoxNzcyMzQ5MTgwfQ.qQWa4Mbxg7txKXmPV2U7yOUC4ld3wGcUwB-YahDlYdk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"title\":\"Updated News Title hbedeudh dn\",\r\n \"description\":\"This is news description hukfuye\",\r\n \"image\":\"image_url\",\r\n \"category\":\"tech\",\r\n \"author\":\"699aac8b630e2340bf6deb0c\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/profile",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "profile"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "top_news",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWVjN2IyYjUxM2FmMDE0OGFjOTVlNiIsImlhdCI6MTc3MjAzOTIzOCwiZXhwIjoxNzcyNjQ0MDM4fQ.mn9tEmwNnY3NWvIrpsCbg8JYwLhs9n72fRdVTMNe5VM",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n{}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/news/top",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "news",
+            "top"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
