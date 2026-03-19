@@ -1,56 +1,138 @@
-# 📰 News Portal Project
+# 📰 News Portal (MERN Stack)
 
-## 📌 Project Description
-This is a full-stack News Portal web application built using:
-
-- React.js  
-- Tailwind CSS  
-- Node.js  
-- Express.js  
-- MongoDB  
-
-The system allows users to:
-
-✅ Register and Login  
-✅ View Latest News  
-✅ Create, Update, and Delete News  
-✅ Profile Management  
-✅ Top 6 Latest News Section  
-✅ Protected Routes  
+A full-stack News Portal web application built using the MERN stack (MongoDB, Express, React, Node.js). Users can register, login, and interact with news content.
 
 ---
 
-## 🚀 Features
+## 🚀 Live Demo
 
-- User Authentication using JWT  
-- Profile Update System  
-- News CRUD Operations  
-- Top Latest News API  
-- Responsive UI using Tailwind CSS  
-- Protected Dashboard  
+🔗 https://module-27-ostad.onrender.com
 
 ---
 
-## 🛠 Technologies Used
+## 📌 Features
+
+* 🔐 User Authentication (Register & Login)
+* 🪪 JWT-based Authorization
+* 📰 News API (Create / Read)
+* 🌐 RESTful API integration
+* ⚡ Fast frontend with React + Vite
+* ☁️ Deployed on Render
+
+---
+
+## 🛠️ Tech Stack
 
 ### Frontend
-- React.js  
-- Tailwind CSS  
-- Axios  
-- React Router  
+
+* React.js (Vite)
+* Axios
+* CSS
 
 ### Backend
-- Node.js  
-- Express.js  
-- MongoDB  
-- JWT Authentication  
-- Bcryptjs  
+
+* Node.js
+* Express.js
+* MongoDB Atlas
+* Mongoose
 
 ---
 
-## ⚙️ Setup Instructions
+## 📁 Project Structure
 
-### Clone Repository
+```
+news-portal/
+│
+├── client/        # React frontend
+│   └── dist/      # Production build
+│
+├── server/        # Backend (Node + Express)
+│   ├── routes/
+│   ├── controllers/
+│   └── server.js
+│
+└── README.md
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone Repository
 
 ```bash
-git clone repository-link
+git clone https://github.com/FarukBadsha0186/module_27_ostad.git
+cd module_27_ostad
+```
+
+---
+
+### 2️⃣ Backend Setup
+
+```bash
+cd server
+npm install
+npm run dev
+```
+
+---
+
+### 3️⃣ Frontend Setup
+
+```bash
+cd client
+npm install
+npm run dev
+```
+
+---
+
+### 4️⃣ Environment Variables
+
+Create a `.env` file inside `server/`:
+
+```
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+PORT=5000
+```
+
+---
+
+## 🔌 API Endpoints
+
+### Auth Routes
+
+* POST `/api/auth/register`
+* POST `/api/auth/login`
+* GET `/api/auth/profile`
+
+### News Routes
+
+* GET `/api/news`
+* POST `/api/news`
+
+---
+
+## 🧪 Testing
+
+Use Postman to test API:
+
+```
+POST https://module-27-ostad.onrender.com/api/auth/register
+```
+
+
+---
+
+## 🙋‍♂️ Author
+
+**Faruk Badsha**
+
+* GitHub: https://github.com/FarukBadsha0186
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
