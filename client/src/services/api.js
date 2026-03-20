@@ -1,7 +1,11 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api", // backend port
+
+ // baseURL: "http://localhost:5000/api", // backend port
+   // baseURL: "https://module-27-ostad.onrender.com/api",
+    baseURL: "https://module-27-ostad.onrender.com/api",
+
 });
 
 // API.interceptors.request.use((req) => {
