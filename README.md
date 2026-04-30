@@ -60,10 +60,6 @@ news-portal/
 
 ### 1️⃣ Clone Repository
 
-```bash
-git clone https://github.com/FarukBadsha0186/module_27_ostad.git
-cd module_27_ostad
-```
 
 ---
 
