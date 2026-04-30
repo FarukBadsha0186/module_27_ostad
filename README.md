@@ -6,7 +6,7 @@ A full-stack News Portal web application built using the MERN stack (MongoDB, Ex
 
 ## 🚀 Live Demo
 
-🔗 https://module-27-ostad.onrender.com
+🔗
 
 ---
 
