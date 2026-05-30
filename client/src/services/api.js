@@ -4,7 +4,9 @@ const API = axios.create({
 
  // baseURL: "http://localhost:5000/api", // backend port
    // baseURL: "https://module-27-ostad.onrender.com/api",
-    baseURL: "https://module-27-ostad.onrender.com/api",
+   // baseURL: "https://module-27-ostad.onrender.com/api",
+
+   baseURL:" https://news-portal-etom.onrender.com/api",
 
 });
 
