@@ -5,6 +5,7 @@ A full-stack News Portal web application built using the MERN stack (MongoDB, Ex
 ---
 
 ## 🚀 Live Demo
+https://news-portal-etom.onrender.com/
 
 🔗
 
